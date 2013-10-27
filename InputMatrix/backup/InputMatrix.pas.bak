@@ -1,5 +1,5 @@
 //Written by Luke Storry
-//Project name: Matrices
+//Matrices Project
 //This program will become a procedures in the final program:
     //to input and check orders of matrixes.
 
@@ -16,7 +16,7 @@ type
   end; //of TMatrix defininition
 
 var
- A , B    : TMatrix;
+ A  : TMatrix;
 
 
 
@@ -28,7 +28,7 @@ procedure InputMatrix(var X : TMatrix);   //parameters are the two matrixes from
                 Writeln('We will now enter matrix ' , X.name , '.');
                 for j := 1 to X.columns do   //each loop will readon one row of the matrix
                     begin
-                      Writeln('Please enter the ' , X.columns , ' values in column ' , j , '  of  matrix ' , X.name , ',');
+                      Writeln('Please enter ' , X.columns , ' values as column ' , j , '  of  the , ' X.name , ' matrix.');
                       for i := 1 to X.rows do  Readln(X.Mat[i,j]); //each loop enters one value/row
                       Writeln;
                     end; //of column loop
@@ -65,12 +65,9 @@ begin
   Writeln('Input a Matrix.');
   Writeln('Written by Luke Storry.'); Writeln;
 
-  A.name    := 'number 1';
+  A.name    := 'A';
   A.rows    := 3;        //another procedure would usually enter these values
   A.columns := 3;        //but for this program, they are defined here
-  B.name    := 'number 1';
-  B.rows    := 3;
-  B.columns := 3;
 
   InputMatrix(A);
   OutputMatrix(A);

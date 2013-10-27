@@ -41,7 +41,7 @@
       <Unit0>
         <Filename Value="CheckOrder2.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="CheckOrder2"/>
+        <UnitName Value="CheckOrder"/>
       </Unit0>
     </Units>
   </ProjectOptions>

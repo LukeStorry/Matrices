@@ -3,7 +3,7 @@
 //This program will become a procedures in the final program:
     //to input and check orders of matrixes.
 
-program CheckOrder2;
+program CheckOrder;
 
 uses
   crt;
@@ -52,16 +52,6 @@ procedure InputOrders(var A , B : TMatrix);   //parameters are the two matrixes 
 
                 Writeln('The matrices of orders ' , A.rows , 'x' , A.columns , ' and ' , B.rows , 'x' , B.columns , ' are compatible for multiplication.');
           end;
-
-
-
-
-
-
-
-
-
-
 
 
 //***MAIN PROGRAM STARTS HERE****

@@ -1,9 +1,9 @@
 //Written by Luke Storry
-//Project name: Matrices
+//Matrices Project
 //This program will become a procedures in the final program:
     //to input and check orders of matrixes.
 
-program CheckOrder2;
+program CheckOrder;
 
 uses
   crt;
