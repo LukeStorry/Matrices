@@ -1,8 +1,6 @@
 Matrices Project
 ================
 
-
--------------------------------------------------------------------------
 Developing a series of functions in Pascal to performe Matrix operations.
 -------------------------------------------------------------------------
 
