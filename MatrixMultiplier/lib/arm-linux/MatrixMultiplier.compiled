@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1374724630"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -Fi/home/lukestorry/Downloads/Matrices/MatrixMultiplier/lib/arm-linux -Fu/home/lukestorry/Downloads/Matrices/MatrixMultiplier/ -FU/home/lukestorry/Downloads/Matrices/MatrixMultiplier/lib/arm-linux/ -l MatrixMultiplier.lpr"/>
-</CONFIG>

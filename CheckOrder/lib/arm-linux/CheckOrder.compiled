@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1374724630"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -Fi/home/lukestorry/Downloads/laz/Matrix/CheckOrder/lib/arm-linux -Fl/opt/gnome/lib -Fu/usr/lib/lazarus/1.0.10/lcl/units/arm-linux/gtk2 -Fu/usr/lib/lazarus/1.0.10/lcl/units/arm-linux -Fu/usr/lib/lazarus/1.0.10/components/lazutils/lib/arm-linux -Fu/usr/lib/lazarus/1.0.10/packager/units/arm-linux -Fu/home/lukestorry/Downloads/laz/Matrix/CheckOrder/ -FU/home/lukestorry/Downloads/laz/Matrix/CheckOrder/lib/arm-linux/ -l -dLCL -dLCLgtk2 CheckOrder.lpr"/>
-  <Complete Value="False"/>
-</CONFIG>
