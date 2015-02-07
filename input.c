@@ -13,14 +13,15 @@
 //a new type to store the matrices in.
 typedef struct matrix{
     char name;
-    float ** arr;
+    int size;
+    float **arr;
     struct matrix *next;
-}matrix;
+}Matrix;
 
 
 
 //adds values into matrix
-void inputMatrixValues(matrix *ptr, int size) {
+void inputMatrixValues(float *ptr, int size) {
     int i, j, baseX = 3, baseY = 15;
     char[5] numStr;
     for (i=0 ; i < size ; i++) {
@@ -31,15 +32,24 @@ void inputMatrixValues(matrix *ptr, int size) {
     }
 }
 
-
-
-//main function to input matrix
-matrix inputMatrix (void) {
-    char name = checkName();
-    int  size = checkSize();
-
+//traverses a linked list and inputs matrix in the right place
+void putInLL(Matrix *matrix, Matrix *testNode) {
+    
+    while ((testNode.next != NULL) && (matrix.name > testNode.name)) {
+    
 
     }
+
+}
+
+//main function to input matrix
+void inputMatrix (Matrix * root) {
+    Matrix matrix;
+    matrix.name = checkName();
+    matrix.size = checkSize();
+    matrix.arr  = malloc(size * size * sizeof(float));
+    inputMatrixValues(matrix.arr);
+    putInLL(matrix,root);
 }
 
 
