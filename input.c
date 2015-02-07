@@ -20,12 +20,13 @@ typedef struct matrix{
 
 
 //adds values into matrix
-void inputMatrixValues(matrix *ptr) {
-    int baseX = 3, baseY = 15;
+void inputMatrixValues(matrix *ptr, int size) {
+    int i, j, baseX = 3, baseY = 15;
+    char[5] numStr;
     for (i=0 ; i < size ; i++) {
         for (j=0 ; i < size ; i++) {
             printf("\033[(baseX+i*3);(baseY+j)H");
-            scanf();//input?
+            scanf("%5f",numStr);// fgetsinput?
         }
     }
 }
