@@ -1,24 +1,44 @@
-/* a matrix calculator
+/* this is the inputs file of 
+ * a matrix calculator
  * Written by Luke Storry
  * https://github.com/LukeStorry/Matrices/
  *
  *
- * matrices stored in a linked list
+ * 26 matrices stored in a linked list, named a-z
  */
 
 #include <stdio.h>
 #include <stdlib.h> 
 
-//define a new type to store the matrices in.
+//a new type to store the matrices in.
 typedef struct matrix{
     char name;
     float ** arr;
     struct matrix *next;
 }matrix;
 
-//define function to input matrix
+
+
+//adds values into matrix
+void inputMatrixValues(matrix *ptr) {
+    int baseX = 3, baseY = 15;
+    for (i=0 ; i < size ; i++) {
+        for (j=0 ; i < size ; i++) {
+            printf("\033[(baseX+i*3);(baseY+j)H");
+            scanf();//input?
+        }
+    }
+}
+
+
+
+//main function to input matrix
 matrix inputMatrix (void) {
-         
+    char name = checkName();
+    int  size = checkSize();
+
+
+    }
 }
 
 
