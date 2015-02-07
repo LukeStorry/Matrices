@@ -23,23 +23,22 @@ typedef struct matrix{
 //adds values into matrix
 void inputMatrixValues(float *ptr, int size) {
     int i, j, baseX = 3, baseY = 15;
-    char[5] numStr;
     for (i=0 ; i < size ; i++) {
         for (j=0 ; i < size ; i++) {
-            printf("\033[(baseX+i*3);(baseY+j)H");
-            scanf("%5f",numStr);// fgetsinput?
+            printf("\033[(baseX+i*2);(baseY+j)H ");//move cursor position
+            *(ptr+i*size+j) = checkFloat();
         }
     }
 }
 
 //traverses a linked list and inputs matrix in the right place
 void putInLL(Matrix *matrix, Matrix *testNode) {
-    
-    while ((testNode.next != NULL) && (matrix.name > testNode.name)) {
-    
-
-    }
-
+    while ((testNode.next != NULL) && (matrix->name > testNode->name)) {
+        testNode = testNode->next;
+    };
+    Matrix *nextNode = testNode->next;
+    testNode->next    = matrix;
+    matrix->next      = nextNode;
 }
 
 //main function to input matrix
@@ -48,10 +47,9 @@ void inputMatrix (Matrix * root) {
     matrix.name = checkName();
     matrix.size = checkSize();
     matrix.arr  = malloc(size * size * sizeof(float));
-    inputMatrixValues(matrix.arr);
+    inputMatrixValues(&(matrix->arr));
     putInLL(matrix,root);
 }
-
 
 //function to return matrix from just the "name"
 matrix *findMatrix(char name, matrix *listStart) {
