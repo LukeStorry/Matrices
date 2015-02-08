@@ -1,4 +1,4 @@
-/* this is the inputs file of 
+/* this is the file containing the IO-related files of 
  * a matrix calculator
  * Written by Luke Storry
  * https://github.com/LukeStorry/Matrices/
@@ -51,12 +51,12 @@ void inputMatrix (Matrix * root) {
     putInLL(matrix,root);
 }
 
-//function to return matrix from just the "name"
-matrix *findMatrix(char name, matrix *listStart) {
-    matrix ptr = listStart;
-    while (ptr->name != name && ptr != NULL) { //end-of-list error-check?
+//function to return matrix from just the 'name' and root
+matrix *findMatrix(char name, matrix *ptr) {
+    while (ptr->name != name && ptr != NULL) { 
 	ptr = ptr->next;
     };
+    //add check? or let it return NULL?
     return ptr;
 };
 
